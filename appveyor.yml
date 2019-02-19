@@ -1,10 +1,10 @@
 version: 1.0.{build}
-image: Visual Studio 2019 Preview
+image: Visual Studio 2017
 environment:
   matrix:
     - LINKAGE: static
       RUNTIME_LIBRARY: MT
-      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019 Preview
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       LICENSE: LGPL21
 
 matrix:
@@ -17,7 +17,6 @@ build_script: build.bat
 test: off
 artifacts:
   - path: '*.zip'
-  - path: '*.7z'
 deploy:
   description: 'Headers, libraries, and executables for FFmpeg.'
   provider: GitHub
