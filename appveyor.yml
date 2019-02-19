@@ -4,7 +4,7 @@ environment:
   matrix:
     - LINKAGE: static
       RUNTIME_LIBRARY: MT
-      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019 Preview
       LICENSE: LGPL21
 
 matrix:
@@ -28,4 +28,4 @@ deploy:
   on:
     appveyor_repo_tag: true
 cache:
-  - c:\nasm-2.14.02-win64.zip
+  - c:\nasm-2.14.03rc2-win64.zip
