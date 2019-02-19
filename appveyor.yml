@@ -17,6 +17,7 @@ build_script: build.bat
 test: off
 artifacts:
   - path: '*.zip'
+  - path: '*.7z'
 deploy:
   description: 'Headers, libraries, and executables for FFmpeg.'
   provider: GitHub
